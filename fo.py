@@ -1,3 +1,2 @@
-p = 55
-f = 54
-print(p+f)
+a , b = 45,65
+print(a*b)
