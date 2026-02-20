@@ -11,3 +11,9 @@ def calc_sum(n):
 sum = calc_sum(5)
 print(sum)
         
+def bigdog():
+  x ="i am the only trible chief"
+  def OTC():
+    print("aknowledge me:",x)
+  OTC()
+bigdog()
