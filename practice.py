@@ -11,3 +11,7 @@ for i in range(1,101):
   if i%3==0 and i%5!=0:
     print(i)
 
+def convertor(mass_val):
+  gram_val=mass_val*1000
+  print(f"{mass_val}kg is {gram_val}g")
+convertor(3.5)
