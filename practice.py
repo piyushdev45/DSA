@@ -36,3 +36,8 @@ f1=fruit("apple","red","tart")
 f2=fruit("banana","yellow","sweet")
 f1.taste()
 f2.taste()
+ 
+def findMax(nums):
+    return max(nums)
+
+print(findMax([3, 5, 1, 9, 2]))
