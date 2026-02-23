@@ -41,3 +41,7 @@ def findMax(nums):
     return max(nums)
 
 print(findMax([3, 5, 1, 9, 2]))
+def sumOfDigits(n):
+    return sum(map(int, str(n)))
+
+print(sumOfDigits(12346))
