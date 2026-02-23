@@ -25,3 +25,14 @@ else:
   print("not multiple of 5 and 11")
 
   
+class fruit:
+  def __init__(self,name,color,flavour):
+    self.name=name
+    self.color=color
+    self.flavour=flavour
+  def taste(self):
+    print(f" i am eating {self.color} {self.name} which taste is {self.flavour}")
+f1=fruit("apple","red","tart")
+f2=fruit("banana","yellow","sweet")
+f1.taste()
+f2.taste()
