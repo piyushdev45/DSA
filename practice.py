@@ -45,3 +45,9 @@ def sumOfDigits(n):
     return sum(map(int, str(n)))
 
 print(sumOfDigits(12346))
+
+list = [1, 2, 3, 4, 5]
+squared_list = [x**2 for x in list] 
+if squared_list:
+    print(squared_list) 
+else:    print("The list is empty.")    
