@@ -7,4 +7,11 @@ for i in list1:
        list2.append("none")
 print(list2)
 for i in range(1,11):
-  print(i)
+  print(i) 
+n = 5
+for i in range(1, 11):
+    print(n, "x", i, "=", n*i)
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
