@@ -6,3 +6,5 @@ for i in list1:
     else:
        list2.append("none")
 print(list2)
+for i in range(1,11):
+  print(i)
