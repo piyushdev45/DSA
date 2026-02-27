@@ -51,3 +51,13 @@ squared_list = [x**2 for x in list]
 if squared_list:
     print(squared_list) 
 else:    print("The list is empty.")    
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+
+print(is_prime(7))
