@@ -9,3 +9,6 @@ for i in arr:
     total += i
 
 print("Sum:", total) 
+
+arr = list(map(int, input("Enter numbers: ").split()))
+print(arr)
