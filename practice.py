@@ -95,3 +95,11 @@ for i in s:
 
 print("Upper:", upper)
 print("Lower:", lower)
+nums = [1,2,3,4,5]
+k = 2
+
+k = k % len(nums)
+
+nums = nums[-k:] + nums[:-k]
+
+print(nums)
