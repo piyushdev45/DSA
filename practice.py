@@ -103,3 +103,12 @@ k = k % len(nums)
 nums = nums[-k:] + nums[:-k]
 
 print(nums)
+
+from itertools import permutations
+
+nums = [1,2,3]
+
+perm = permutations(nums)
+
+for i in perm:
+    print(i)
