@@ -127,3 +127,15 @@ r = Rectangle(10, 5)
 
 print("Area:", r.area())
 print("Perimeter:", r.perimeter())
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def show_details(self):
+        print("Brand:", self.brand)
+        print("Model:", self.model)
+
+c1 = Car("Toyota", "Fortuner")
+c1.show_details()
