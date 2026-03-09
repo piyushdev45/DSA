@@ -139,3 +139,9 @@ class Car:
 
 c1 = Car("Toyota", "Fortuner")
 c1.show_details()
+
+n= input("enter your name ")
+d=int(input("enter your age"))
+print("name:",n)
+print("age:",d)
+
