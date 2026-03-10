@@ -20,3 +20,19 @@ team2.score_goal()
 
 team1.show_score()
 team2.show_score()
+
+class Player:
+
+    def __init__(self, name, role, runs):
+        self.name = name
+        self.role = role
+        self.runs = runs
+
+    def show_details(self):
+        print("Player:", self.name)
+        print("Role:", self.role)
+        print("Runs:", self.runs)
+
+
+p1 = Player("Virat Kohli", "Batsman", 12000)
+p1.show_details()
