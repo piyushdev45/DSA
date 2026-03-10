@@ -145,3 +145,5 @@ d=int(input("enter your age"))
 print("name:",n)
 print("age:",d)
 
+
+
