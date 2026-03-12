@@ -3,6 +3,6 @@ print(list)
 #NODE 
 class Node:
     def __init__(self,data):
-        self.data=data(3)
-        self.next=None(3)
+        self.data=data()
+        self.next=None()
         print("Node created with data:",self.data)
