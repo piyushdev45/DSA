@@ -155,3 +155,14 @@ random_number = generate_random_number(start, end)
 print(f"Generated random number between {start} and {end}: {random_number}")
 
 
+class client:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display(self):
+        print("name:",self.name)
+        print("age:",self.age)
+
+
+c1 = client("John", 25)
+c1.display()
