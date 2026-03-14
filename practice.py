@@ -159,10 +159,10 @@ class client:
     def __init__(self,name,age):
         self.name=name
         self.age=age
-    def display(self):
-        print("name:",self.name)
-        print("age:",self.age)
-
-
-c1 = client("John", 25)
-c1.display()
+        if self.age < 18:
+            print("client is minor")
+        else:
+                print("client is major")    
+c1=client("john",17)
+c2=client("doe",25) 
+    
