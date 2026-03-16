@@ -36,3 +36,10 @@ print(a[idx])       # integer indexing
 
 cond = a > 30
 print(a[cond])      # boolean indexing
+
+
+#numpy arrthemetic operations
+a = np.array([7, 7, 3]) 
+b = np.array([4, 6, 6])
+print(a + b)  # element-wise addition
+print(a * b)  # element-wise multiplication
