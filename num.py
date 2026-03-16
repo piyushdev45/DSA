@@ -6,3 +6,13 @@ print(a2)
 print(a3)
 a4 = a1 + a2 + a3
 print(a4)
+
+import numpy as np
+
+a0 = np.zeros((3, 3))
+a1  = np.ones((2, 2))
+ar  = np.arange(0, 10, 2)
+
+print(a0)
+print(a1)
+print(ar)
