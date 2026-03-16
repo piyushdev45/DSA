@@ -23,3 +23,16 @@ a3 =([7,8,9])
 print(a1[2])
 print(a2[1])
 print(a3[0])
+print (a1[0:2])
+print (a2[1:])
+
+
+import numpy as np
+
+a = np.array([10, 5, 40, 40, 90, 60])
+idx = np.array([1, 3, 5])
+
+print(a[idx])       # integer indexing
+
+cond = a > 30
+print(a[cond])      # boolean indexing
