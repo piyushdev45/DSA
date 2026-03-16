@@ -39,7 +39,21 @@ print(a[cond])      # boolean indexing
 
 
 #numpy arrthemetic operations
-a = np.array([7, 7, 3]) 
+a = np.array([7, 7, 3])                       # we also can perform this operations by using res 
 b = np.array([4, 6, 6])
 print(a + b)  # element-wise addition
 print(a * b)  # element-wise multiplication
+
+#numpy shorting array
+import numpy as np
+
+dtype = [('name', 'S10'), ('year', int), ('cgpa', float)]
+vals  = [('piyush', 2028, 8.5),
+         ('Ajay',    2027, 8.7),
+         ('jp',  2027, 7.9),
+         ('abhinav',  2028, 9.0)]
+
+a = np.array(vals, dtype=dtype)
+
+print(np.sort(a, order='name'))
+print(np.sort(a, order=['year', 'cgpa']))
