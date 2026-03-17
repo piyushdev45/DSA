@@ -100,3 +100,11 @@ print(np.empty([4, 3],
          order = 'f')
 )
 
+
+import numpy as np
+
+vector_zeros = np.zeros(3)
+print("Vector using np.zeros():", vector_zeros)
+
+vector_ones = np.ones(8)
+print("Vector using np.ones():", vector_ones)
