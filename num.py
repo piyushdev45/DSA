@@ -72,4 +72,12 @@ print ("first 2 rows and alternate columns(0 and 2):\n", arr2)
 arr3 = arr[[1, 1, 0, 3], 
                 [3, 2, 1, 0]]
 print ("\nElements at indices (1, 3), "
-    "(1, 2), (0, 1), (3, 0):\n", arr3)
+    "(1, 2), (0, 1), (3, 0):\n", arr3) 
+
+import numpy as np
+
+a1= np.array([1, 2, 3])
+a2 = np.array([3, 4, 5])
+print(a1+1)  # add 1 to each element of a1
+print(a1*2)  # multiply each element of a1 by 2
+print (a1.sum())  # sum of all elements in a1
