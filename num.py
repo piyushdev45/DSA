@@ -81,3 +81,22 @@ a2 = np.array([3, 4, 5])
 print(a1+1)  # add 1 to each element of a1
 print(a1*2)  # multiply each element of a1 by 2
 print (a1.sum())  # sum of all elements in a1
+
+x = np.array([8, 2,8, 4, 5])  
+print(x.dtype)         
+ 
+x = np.array([1.0, 2.0]) 
+print(x.dtype) 
+
+
+
+import numpy as np
+
+np.empty([4, 3],
+         dtype = np.int32,
+         order = 'f')
+print(np.empty([4, 3],
+         dtype = np.int32,
+         order = 'f')
+)
+
