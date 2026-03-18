@@ -161,3 +161,14 @@ print(row)
 arr_row = np.append(arr, row, axis=1)
 print('Array after appending the values row wise')
 print(arr_row)
+
+#swapping array
+import numpy as np
+
+# create array
+arr = np.array([10, 20, 30, 40])
+
+# swap 1st and 3rd element
+arr[0], arr[2] = arr[2], arr[0]
+
+print(arr)
