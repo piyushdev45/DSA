@@ -108,3 +108,17 @@ print("Vector using np.zeros():", vector_zeros)
 
 vector_ones = np.ones(8)
 print("Vector using np.ones():", vector_ones)
+
+
+a1= np.array([1, 2, 3, 4, 5])
+v= a1.view()
+a1[0] = 10
+print("Original array:", a1) 
+print ("views of the original array:", v)
+
+
+a1= np.array([1, 2, 3, 4, 5])
+c= a1.copy()
+a1[0] = 10  
+print("Original array:", a1)
+print("Copy of the original array:", c)
