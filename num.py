@@ -122,3 +122,13 @@ c= a1.copy()
 a1[0] = 10  
 print("Original array:", a1)
 print("Copy of the original array:", c)
+
+#appending array
+import numpy as np  
+a1 = np.array([1, 2, 3])
+a2 = np.array([4, 5, 6])        
+a3 = np.append(a1, a2)
+print(a3)
+
+a1 = np.append(a1, 4)
+print(a1)
