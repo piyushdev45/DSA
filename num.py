@@ -132,3 +132,6 @@ print(a3)
 
 a1 = np.append(a1, 4)
 print(a1)
+
+a5= np.concatenate((a1, a2))
+print(a5)
