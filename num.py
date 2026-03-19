@@ -172,3 +172,10 @@ arr = np.array([10, 20, 30, 40])
 arr[0], arr[2] = arr[2], arr[0]
 
 print(arr)
+
+import numpy as np
+a = np.arange(12).reshape(4, 3)
+print("Original array:\n", a)
+
+a[:, [0, 2]] = a[:, [2, 0]]
+print("After swapping:\n",a)
