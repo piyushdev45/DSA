@@ -179,3 +179,9 @@ print("Original array:\n", a)
 
 a[:, [0, 2]] = a[:, [2, 0]]
 print("After swapping:\n",a)
+
+import numpy as np
+
+x = np.zeros((3, 4))
+y = np.expand_dims(x, axis=1).shape
+print(y)
