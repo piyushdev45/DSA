@@ -185,3 +185,10 @@ import numpy as np
 x = np.zeros((3, 4))
 y = np.expand_dims(x, axis=1).shape
 print(y)
+
+import numpy as np
+arr= np.arange(5*5).reshape(5, 5)
+print(arr.shape)
+arr_5D = arr[np.newaxis, ..., np.newaxis, np.newaxis]
+print(arr_5D.shape)
+

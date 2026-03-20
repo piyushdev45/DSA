@@ -164,5 +164,5 @@ class client:
         else:
                 print("client is major")    
 c1=client("john",17)
-c2=client("doe",25) 
-    
+c2=client("doe",25)  
+
