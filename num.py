@@ -192,3 +192,16 @@ print(arr.shape)
 arr_5D = arr[np.newaxis, ..., np.newaxis, np.newaxis]
 print(arr_5D.shape)
 
+# v.stacking arrays
+import numpy as np
+a1 = np.array([1, 2, 3])
+a2 = np.array([4, 5, 6])    
+a3 = np.vstack((a1, a2))
+print(a3)   
+
+#h.stack arrays
+import numpy as np  
+a1 = np.array([1, 2, 3])
+a2 = np.array([4, 5, 6])    
+a3 = np.hstack((a1, a2))
+print(a3)
