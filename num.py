@@ -206,9 +206,9 @@ a2 = np.array([4, 5, 6])
 a3 = np.hstack((a1, a2))
 print(a3)
 
-# d.stack arrays
-import numpy as np  
-a1 = np.array([1, 2, 3])
-a2 = np.array([4, 5, 6])        
-a3 = np.dstack((a1, a2))
+#d.stack arrays
+from numpy import *
+a1 = array([1, 2, 3])
+a2 = array([4, 5, 6])        
+a3 = dstack((a1, a2))
 print(a3)
