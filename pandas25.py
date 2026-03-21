@@ -25,11 +25,20 @@
 # df = pd.DataFrame()
 # print(df)
 
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 
-data = { 'A': np.array([1, 4, 7]),
-         'B': np.array([2, 5, 8]),
-         'C': np.array([3, 6, 9]) }
+# data = { 'A': np.array([1, 4, 7]),
+#          'B': np.array([2, 5, 8]),
+#          'C': np.array([3, 6, 9]) }
+# df = pd.DataFrame(data)
+# print(df)
+
+import pandas as pd
+data = [
+    {'name': 'yash', 'degree': 'MBA', 'score': 90},
+    {'name': 'jp', 'degree': 'BCA', 'score': 40},
+    {'name': 'piyush', 'degree': 'M.Tech', 'score': 80},
+]
 df = pd.DataFrame(data)
 print(df)
