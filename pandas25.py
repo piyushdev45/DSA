@@ -34,11 +34,18 @@
 # df = pd.DataFrame(data)
 # print(df)
 
+# import pandas as pd
+# data = [
+#     {'name': 'yash', 'degree': 'MBA', 'score': 90},
+#     {'name': 'jp', 'degree': 'BCA', 'score': 40},
+#     {'name': 'piyush', 'degree': 'M.Tech', 'score': 80},
+# ]
+# df = pd.DataFrame(data)
+# print(df)
+
 import pandas as pd
-data = [
-    {'name': 'yash', 'degree': 'MBA', 'score': 90},
-    {'name': 'jp', 'degree': 'BCA', 'score': 40},
-    {'name': 'piyush', 'degree': 'M.Tech', 'score': 80},
-]
-df = pd.DataFrame(data)
-print(df)
+
+data = [1, 2, 3, 4]
+ 
+ser = pd.Series(data)
+print(ser)
