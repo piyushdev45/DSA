@@ -13,11 +13,14 @@
 # print("Pandas Series:\n", s)
 
 
-import pandas as pd 
+# import pandas as pd 
    
-df = pd.DataFrame() 
-print(df)
-lst = ['Geeks', 'For', 'Geeks', 'is', 'portal', 'for', 'Geeks'] 
+# df = pd.DataFrame() 
+# print(df)
+# lst = ['Geeks', 'For', 'Geeks', 'is', 'portal', 'for', 'Geeks'] 
   
-df = pd.DataFrame(lst) 
+# df = pd.DataFrame(lst) 
+# print(df)
+import pandas as pd
+df = pd.DataFrame()
 print(df)
