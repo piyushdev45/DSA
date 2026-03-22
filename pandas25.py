@@ -65,7 +65,13 @@
 # print(df['score'].isnull())
 
 #finding mising values  
+# import pandas as pd
+# a1 = pd.Series([1, 2, 3, None, 5])
+# print(a1)
+# print(a1.isnull())
+
+import numpy as np
 import pandas as pd
-a1 = pd.Series([1, 2, 3, None, 5])
-print(a1)
-print(a1.isnull())
+
+ser = pd.Series(np.linspace(1, 10, 5))
+print(ser)
