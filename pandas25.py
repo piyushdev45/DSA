@@ -43,21 +43,29 @@
 # df = pd.DataFrame(data)
 # print(df)
 
-import pandas as pd
+# import pandas as pd
 
-data = [1, 2, 3, 4]
+# data = [1, 2, 3, 4]
  
-ser = pd.Series(data)
-print(ser)
+# ser = pd.Series(data)
+# print(ser)
 
+# import pandas as pd
+# data = {
+#     'name': ['yash', 'jp', 'piyush','aurafarmer','chitransh'],
+#     'degree': ['B.COM', 'BCA', 'M.Tech','M.TECH','B.TECH'],
+#     'score': [75, 85, 89, 'none', 79],
+#     'age': [22, 21, 23, 22, 23],
+#     'city': ['GZB', 'GZB', 'GZB', 'MADARA', 'AGRA']  
+# }
+# df = pd.DataFrame(data)
+# print(df)
+# print(unique_city := df['city'].unique() )
+# print(df.info())
+# print(df['score'].isnull())
+
+#finding mising values  
 import pandas as pd
-data = {
-    'name': ['yash', 'jp', 'piyush','aurafarmer','chitransh'],
-    'degree': ['B.COM', 'BCA', 'M.Tech','M.TECH','B.TECH'],
-    'score': [75, 85, 89, 90, 79],
-    'age': [22, 21, 23, 22, 23],
-    'city': ['GZB', 'GZB', 'GZB', 'MADARA', 'AGRA']  
-}
-df = pd.DataFrame(data)
-print(df)
-print(unique_city := df['city'].unique() )
+a1 = pd.Series([1, 2, 3, None, 5])
+print(a1)
+print(a1.isnull())
