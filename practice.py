@@ -168,16 +168,23 @@
 
 
 
-def frequency(lst):
-    freq = {}
+# def frequency(lst):
+#     freq = {}
     
-    for item in lst:
-        if item in freq:
-            freq[item] += 1
-        else:
-            freq[item] = 1
+#     for item in lst:
+#         if item in freq:
+#             freq[item] += 1
+#         else:
+#             freq[item] = 1
             
-    return freq
+#     return freq
 
-nums = [1, 2, 2, 3, 3, 3, 4]
-print(frequency(nums))
+# nums = [1, 2, 2, 3, 3, 3, 4]
+# print(frequency(nums))
+
+n = 7
+a, b = 0, 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
