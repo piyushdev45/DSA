@@ -40,12 +40,20 @@
 
 # print(findMin([3, 1, 7, 2]))
 
-def isPrime(n):
-    if n <= 1:
-        return False
-    for i in range(2, n):
-        if n % i == 0:
-            return False
-    return True
+# def isPrime(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2, n):
+#         if n % i == 0:
+#             return False
+#     return True
 
-print(isPrime(7))
+# print(isPrime(7))
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+print(factorial(5))
