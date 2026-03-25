@@ -50,10 +50,19 @@
 
 # print(isPrime(7))
 
-def factorial(n):
-    result = 1
-    for i in range(1, n + 1):
-        result *= i
-    return result
+# def factorial(n):
+#     result = 1
+#     for i in range(1, n + 1):
+#         result *= i
+#     return result
 
-print(factorial(5))
+# print(factorial(5))
+
+def sumEven(n):
+    total = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            total += i
+    return total
+
+print(sumEven(10))
