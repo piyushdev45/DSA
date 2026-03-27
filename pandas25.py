@@ -64,14 +64,23 @@
 # print(df.info())
 # print(df['score'].isnull())
 
-#finding mising values  
+# finding mising values  
 # import pandas as pd
 # a1 = pd.Series([1, 2, 3, None, 5])
 # print(a1)
 # print(a1.isnull())
 
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 
-ser = pd.Series(np.linspace(1, 10, 5))
-print(ser)
+# ser = pd.Series(np.linspace(1, 10, 5))
+# print(ser)
+
+# import pandas  as pd 
+# df= pd.read_csv('data.csv')
+# print(df)
+
+import pandas as pd 
+df = pd.read_csv('nba.csv')
+print(df.tail(3))
+
