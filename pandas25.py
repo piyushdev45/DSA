@@ -80,8 +80,36 @@
 # df= pd.read_csv('data.csv')
 # print(df)
 
-import pandas as pd 
-df = pd.read_csv('nba.csv')
-print(df.tail(3))
-print(df.head(2))
+# import pandas as pd 
+# df = pd.read_csv('nba.csv')
+# print(df.tail(3))
+# print(df.head(2))
 
+# import pandas as pd               # wrong code start 
+# df = pd.read_csv('nba.csv')
+# new_row = {
+#     'name': 'chandi',
+#     'age': 18,
+#     'place': 'GZB',
+#     'course': 'B.TECH',         # wrong code 
+ #     'salary': 12000
+# }
+
+# df.loc[len(df)] = new_row
+# print(df)                          # wrong code end 
+    
+import pandas as pd
+
+df = pd.read_csv('nba.csv')
+
+new_row = {
+    'name': 'chandi',
+    'age': 18,
+    'place': 'GZB',
+    'course': 'B.TECH',
+    'salary': 12000
+}
+
+df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+
+print(df)
