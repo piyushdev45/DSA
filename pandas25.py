@@ -98,18 +98,23 @@
 # df.loc[len(df)] = new_row
 # print(df)                          # wrong code end 
     
+# import pandas as pd
+
+# df = pd.read_csv('nba.csv')
+
+# new_row = {
+#     'name': 'chandi',
+#     'age': 18,
+#     'place': 'GZB',
+#     'course': 'B.TECH',
+#     'salary': 12000
+# }
+
+# df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+
+# print(df)
+# data lock 
 import pandas as pd
 
-df = pd.read_csv('nba.csv')
-
-new_row = {
-    'name': 'chandi',
-    'age': 18,
-    'place': 'GZB',
-    'course': 'B.TECH',
-    'salary': 12000
-}
-
-df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
-
-print(df)
+df= pd.read_csv('nba.csv')
+print(df.loc[0:2, ['name', 'age']])
