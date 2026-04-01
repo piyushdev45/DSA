@@ -120,7 +120,16 @@
 # print(df.loc[0:2, ['name', 'age']])
 
 
+# import pandas as pd
+# s = pd.Series([1, 2, 3, 4])
+# r = s.apply(lambda x: x * 2)
+# print(r)
+
 import pandas as pd
-s = pd.Series([1, 2, 3, 4])
-r = s.apply(lambda x: x * 2)
+
+s = pd.Series([35, 67, 90, 45])
+def f(x):
+    return "Pass" if x >= 50 else "Fail"
+
+r = s.apply(f)
 print(r)
