@@ -125,11 +125,16 @@
 # r = s.apply(lambda x: x * 2)
 # print(r)
 
+# import pandas as pd
+
+# s = pd.Series([35, 67, 90, 45])
+# def f(x):
+#     return "Pass" if x >= 50 else "Fail"
+
+# r = s.apply(f)
+# print(r)
+
 import pandas as pd
-
-s = pd.Series([35, 67, 90, 45])
-def f(x):
-    return "Pass" if x >= 50 else "Fail"
-
-r = s.apply(f)
+s = pd.Series([10000, 15000, 20000])
+r = s.apply(lambda x: x * 1.10)
 print(r)
