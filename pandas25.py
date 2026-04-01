@@ -114,7 +114,13 @@
 
 # print(df)
 # data lock 
-import pandas as pd
+# import pandas as pd
 
-df= pd.read_csv('nba.csv')
-print(df.loc[0:2, ['name', 'age']])
+# df= pd.read_csv('nba.csv')
+# print(df.loc[0:2, ['name', 'age']])
+
+
+import pandas as pd
+s = pd.Series([1, 2, 3, 4])
+r = s.apply(lambda x: x * 2)
+print(r)
