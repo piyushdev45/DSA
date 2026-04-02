@@ -134,7 +134,13 @@
 # r = s.apply(f)
 # print(r)
 
+# import pandas as pd
+# s = pd.Series([10000, 15000, 20000])
+# r = s.apply(lambda x: x * 1.10)
+# print(r)
+
+
 import pandas as pd
-s = pd.Series([10000, 15000, 20000])
-r = s.apply(lambda x: x * 1.10)
-print(r)
+df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]})
+df['add'] = df['A'] + df['B'] + df['C']
+print(df)
