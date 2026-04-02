@@ -140,7 +140,18 @@
 # print(r)
 
 
+# import pandas as pd
+# df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]})
+# df['add'] = df['A'] + df['B'] + df['C']
+# print(df)
+
+
 import pandas as pd
-df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6], 'C': [7, 8, 9]})
-df['add'] = df['A'] + df['B'] + df['C']
-print(df)
+
+# Creating the Series
+sr = pd.Series(['New York', 'Chicago', 'gzb', 'rome', 'delhi'])
+
+# Create the Index
+index_ = ['City 1', 'City 2', 'City 3', 'City 4', 'City 5']
+sr.index = index_
+print(sr)
