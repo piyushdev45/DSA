@@ -146,12 +146,24 @@
 # print(df)
 
 
+# import pandas as pd
+
+# # Creating the Series
+# sr = pd.Series(['New York', 'Chicago', 'gzb', 'rome', 'delhi'])
+
+# # Create the Index
+# index_ = ['City 1', 'City 2', 'City 3', 'City 4', 'City 5']
+# sr.index = index_
+# print(sr)
+
 import pandas as pd
 
-# Creating the Series
-sr = pd.Series(['New York', 'Chicago', 'gzb', 'rome', 'delhi'])
+# Creating the dataframe 
+df = pd.DataFrame({"A":[12, 4, 5, 44, 1],
+                   "B":[5, 2, 54, 3, 2], 
+                   "C":[20, 16, 7, 3, 8],
+                   "D":[14, 3, 17, 2, 6]})
 
-# Create the Index
-index_ = ['City 1', 'City 2', 'City 3', 'City 4', 'City 5']
-sr.index = index_
-print(sr)
+# Print the dataframe
+df.index = ['Row 1', 'Row 2', 'Row 3', 'Row 4', 'Row 5']
+print(df)
