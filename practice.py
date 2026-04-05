@@ -212,11 +212,19 @@
 # print(flat)
 # print(reshaped)
 
+# import numpy as np
+
+# arr = np.array([1, 2, 2, 3, 3, 3, 4])
+
+# unique, counts = np.unique(arr, return_counts=True)
+
+# print("Unique:", unique)
+# print("Counts:", counts)
+
 import numpy as np
 
-arr = np.array([1, 2, 2, 3, 3, 3, 4])
+arr = np.array([5, 10, 15, 20, 25, 30])
 
-unique, counts = np.unique(arr, return_counts=True)
+result = arr[(arr > 10) & (arr < 25)]
 
-print("Unique:", unique)
-print("Counts:", counts)
+print(result)
