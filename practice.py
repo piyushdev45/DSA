@@ -189,15 +189,25 @@
 #     print(a, end=" ")
 #     a, b = b, a + b
 
-import pandas as pd
+# import pandas as pd
 
-data = {
-    "Name": ["A", "B", "C", "D"],
-    "Age": [20, 25, 19, 30],
-    "Marks": [85, 90, 78, 92]
-}
+# data = {
+#     "Name": ["A", "B", "C", "D"],
+#     "Age": [20, 25, 19, 30],
+#     "Marks": [85, 90, 78, 92]
+# }
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
 
-result = df[df["Marks"] > 80]
-print(result)
+# result = df[df["Marks"] > 80]
+# print(result)
+
+import numpy as np
+
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+flat = arr.flatten()
+reshaped = flat.reshape(3, 2)
+
+print(flat)
+print(reshaped)
