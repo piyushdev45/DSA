@@ -156,14 +156,33 @@
 # sr.index = index_
 # print(sr)
 
-import pandas as pd
+# import pandas as pd
 
-# Creating the dataframe 
-df = pd.DataFrame({"A":[12, 4, 5, 44, 1],
-                   "B":[5, 2, 54, 3, 2], 
-                   "C":[20, 16, 7, 3, 8],
-                   "D":[14, 3, 17, 2, 6]})
+# # Creating the dataframe 
+# df = pd.DataFrame({"A":[12, 4, 5, 44, 1],
+#                    "B":[5, 2, 54, 3, 2], 
+#                    "C":[20, 16, 7, 3, 8],
+#                    "D":[14, 3, 17, 2, 6]})
 
-# Print the dataframe
-df.index = ['Row 1', 'Row 2', 'Row 3', 'Row 4', 'Row 5']
-print(df)
+# # Print the dataframe
+# df.index = ['Row 1', 'Row 2', 'Row 3', 'Row 4', 'Row 5']
+# print(df)
+
+
+# importing pandas module 
+import pandas as pd 
+  
+ 
+import numpy as np 
+  
+
+list =[5, 12, 1, 0, 4, 22, 15, 3, 9]
+
+
+series = pd.Series(list)
+
+
+result = series.mad()
+
+# display
+result

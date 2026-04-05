@@ -182,9 +182,22 @@
 # nums = [1, 2, 2, 3, 3, 3, 4]
 # print(frequency(nums))
 
-n = 7
-a, b = 0, 1
+# n = 7
+# a, b = 0, 1
 
-for i in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
+# for i in range(n):
+#     print(a, end=" ")
+#     a, b = b, a + b
+
+import pandas as pd
+
+data = {
+    "Name": ["A", "B", "C", "D"],
+    "Age": [20, 25, 19, 30],
+    "Marks": [85, 90, 78, 92]
+}
+
+df = pd.DataFrame(data)
+
+result = df[df["Marks"] > 80]
+print(result)
