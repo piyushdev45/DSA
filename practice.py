@@ -202,12 +202,21 @@
 # result = df[df["Marks"] > 80]
 # print(result)
 
+# import numpy as np
+
+# arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+# flat = arr.flatten()
+# reshaped = flat.reshape(3, 2)
+
+# print(flat)
+# print(reshaped)
+
 import numpy as np
 
-arr = np.array([[1, 2, 3], [4, 5, 6]])
+arr = np.array([1, 2, 2, 3, 3, 3, 4])
 
-flat = arr.flatten()
-reshaped = flat.reshape(3, 2)
+unique, counts = np.unique(arr, return_counts=True)
 
-print(flat)
-print(reshaped)
+print("Unique:", unique)
+print("Counts:", counts)
