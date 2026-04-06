@@ -255,5 +255,8 @@ df = pd.DataFrame(data1)
 print(df)
 
 
-df.groupby('Name')
-print(df.groupby('Name').groups)
+# df.groupby('Name')
+# print(df.groupby('Name').groups)
+
+df.groupby(['Name', 'Qualification'])
+print(df.groupby(['Name', 'Qualification']).groups)
