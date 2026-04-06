@@ -231,12 +231,29 @@
 
 # grouping 
 
+# import pandas as pd
+# data = {
+#     "Name": ["A", "B", "C", "D", "E"],
+#     "Age": [20, 25, 19, 30, 22],
+#     "Marks": [85, 90, 78, 92, 88]
+# }
+# df = pd.DataFrame(data)     
+# grouped = df.groupby("Age")["Marks"].mean()
+# print(grouped)
+
 import pandas as pd
-data = {
-    "Name": ["A", "B", "C", "D", "E"],
-    "Age": [20, 25, 19, 30, 22],
-    "Marks": [85, 90, 78, 92, 88]
-}
-df = pd.DataFrame(data)     
-grouped = df.groupby("Age")["Marks"].mean()
-print(grouped)
+
+data1 = {'Name':['Jai', 'Anuj', 'Jai', 'Princi',
+                 'Gaurav', 'Anuj', 'Princi', 'Abhi'],
+        'Age':[27, 24, 22, 32,
+               33, 36, 27, 32],
+        'Address':['Nagpur', 'Kanpur', 'Allahabad', 'Kannuaj',
+                   'Jaunpur', 'Kanpur', 'Allahabad', 'Aligarh'],
+        'Qualification':['Msc', 'MA', 'MCA', 'Phd',
+                         'B.Tech', 'B.com', 'Msc', 'MA']}
+df = pd.DataFrame(data1)
+print(df)
+
+
+df.groupby('Name')
+print(df.groupby('Name').groups)
