@@ -221,10 +221,22 @@
 # print("Unique:", unique)
 # print("Counts:", counts)
 
-import numpy as np
+# import numpy as np
 
-arr = np.array([5, 10, 15, 20, 25, 30])
+# arr = np.array([5, 10, 15, 20, 25, 30])
 
-result = arr[(arr > 10) & (arr < 25)]
+# result = arr[(arr > 10) & (arr < 25)]
 
-print(result)
+# print(result)
+
+# grouping 
+
+import pandas as pd
+data = {
+    "Name": ["A", "B", "C", "D", "E"],
+    "Age": [20, 25, 19, 30, 22],
+    "Marks": [85, 90, 78, 92, 88]
+}
+df = pd.DataFrame(data)     
+grouped = df.groupby("Age")["Marks"].mean()
+print(grouped)
