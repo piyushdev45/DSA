@@ -262,5 +262,9 @@ print(df)
 # df.groupby(['Name', 'Qualification'])
 # print(df.groupby(['Name', 'Qualification']).groups)
 
-grp1 = df.groupby('Name')
-grp1['Age'].aggregate(np.sum)
+# grp1 = df.groupby('Name')
+# grp1['Age'].aggregate(np.sum)
+
+#mean 
+grp = df.groupby('Name')
+grp['Age'].agg([np.sum, np.mean, np.std])
