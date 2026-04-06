@@ -241,6 +241,7 @@
 # grouped = df.groupby("Age")["Marks"].mean()
 # print(grouped)
 
+import numpy as np
 import pandas as pd
 
 data1 = {'Name':['Jai', 'Anuj', 'Jai', 'Princi',
@@ -258,5 +259,8 @@ print(df)
 # df.groupby('Name')
 # print(df.groupby('Name').groups)
 
-df.groupby(['Name', 'Qualification'])
-print(df.groupby(['Name', 'Qualification']).groups)
+# df.groupby(['Name', 'Qualification'])
+# print(df.groupby(['Name', 'Qualification']).groups)
+
+grp1 = df.groupby('Name')
+grp1['Age'].aggregate(np.sum)
