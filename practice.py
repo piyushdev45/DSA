@@ -265,6 +265,8 @@
 # grp1 = df.groupby('Name')
 # grp1['Age'].aggregate(np.sum)
 
-#mean 
+# mean 
 # grp = df.groupby('Name')
 # grp['Age'].agg([np.sum, np.mean, np.std])
+
+
