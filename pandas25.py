@@ -201,4 +201,8 @@ example = {'Team':['Arsenal', 'Manchester United', 'Arsenal',
 
 df = pd.DataFrame(example)
 
-print(df)
+# print(df)
+total_goals = df['Goals'].groupby(df['Team'])
+
+# printing the means value
+print(total_goals.mean())
