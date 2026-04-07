@@ -188,21 +188,45 @@
 # result
 
 
-import pandas as pd
-example = {'Team':['Arsenal', 'Manchester United', 'Arsenal',
-                   'Arsenal', 'Chelsea', 'Manchester United',
-                   'Manchester United', 'Chelsea', 'Chelsea', 'Chelsea'],
+# import pandas as pd
+# example = {'Team':['Arsenal', 'Manchester United', 'Arsenal',
+#                    'Arsenal', 'Chelsea', 'Manchester United',
+#                    'Manchester United', 'Chelsea', 'Chelsea', 'Chelsea'],
                    
-           'Player':['Ozil', 'Pogba', 'Lucas', 'Aubameyang',
-                       'Hazard', 'Mata', 'Lukaku', 'Morata', 
-                                         'Giroud', 'Kante'],
+#            'Player':['Ozil', 'Pogba', 'Lucas', 'Aubameyang',
+#                        'Hazard', 'Mata', 'Lukaku', 'Morata', 
+#                                          'Giroud', 'Kante'],
                                          
-           'Goals':[5, 3, 6, 4, 9, 2, 0, 5, 2, 3] }
+#            'Goals':[5, 3, 6, 4, 9, 2, 0, 5, 2, 3] }
+
+# df = pd.DataFrame(example)
+
+# # print(df)
+# total_goals = df['Goals'].groupby(df['Team'])
+
+# # printing the means value
+# print(total_goals.mean())
+
+import pandas as pd
+
+# example dataframe
+example = {'Team':['Australia', 'England', 'South Africa',
+                   'Australia', 'England', 'India', 'India',
+                        'South Africa', 'England', 'India'],
+                        
+           'Player':['Ricky Ponting', 'Joe Root', 'Hashim Amla',
+                     'David Warner', 'Jos Buttler', 'Virat Kohli',
+                     'Rohit Sharma', 'David Miller', 'Eoin Morgan',
+                                                 'Dinesh Karthik'],
+                                                 
+          'Runs':[345, 336, 689, 490, 989, 672, 560, 455, 342, 376],
+          
+          'Salary':[34500, 33600, 68900, 49000, 98899,
+                    67562, 56760, 45675, 34542, 31176] }
 
 df = pd.DataFrame(example)
 
-# print(df)
-total_goals = df['Goals'].groupby(df['Team'])
+total_salary = df['Salary'].groupby(df['Team'])
 
 # printing the means value
-print(total_goals.mean())
+print(total_salary.mean())
