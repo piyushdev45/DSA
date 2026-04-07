@@ -170,19 +170,35 @@
 
 
 # importing pandas module 
-import pandas as pd 
+# import pandas as pd 
   
  
-import numpy as np 
+# import numpy as np 
   
 
-list =[5, 12, 1, 0, 4, 22, 15, 3, 9]
+# list =[5, 12, 1, 0, 4, 22, 15, 3, 9]
 
 
-series = pd.Series(list)
+# series = pd.Series(list)
 
 
-result = series.mad()
+# result = series.mad()
 
-# display
-result
+# # display
+# result
+
+
+import pandas as pd
+example = {'Team':['Arsenal', 'Manchester United', 'Arsenal',
+                   'Arsenal', 'Chelsea', 'Manchester United',
+                   'Manchester United', 'Chelsea', 'Chelsea', 'Chelsea'],
+                   
+           'Player':['Ozil', 'Pogba', 'Lucas', 'Aubameyang',
+                       'Hazard', 'Mata', 'Lukaku', 'Morata', 
+                                         'Giroud', 'Kante'],
+                                         
+           'Goals':[5, 3, 6, 4, 9, 2, 0, 5, 2, 3] }
+
+df = pd.DataFrame(example)
+
+print(df)
