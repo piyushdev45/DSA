@@ -58,11 +58,39 @@
 
 # print(factorial(5))
 
-def sumEven(n):
-    total = 0
-    for i in range(1, n + 1):
-        if i % 2 == 0:
-            total += i
-    return total
+# def sumEven(n):
+#     total = 0
+#     for i in range(1, n + 1):
+#         if i % 2 == 0:
+#             total += i
+#     return total
 
-print(sumEven(10))
+# print(sumEven(10))
+
+# def twoSum(numbers, target):
+#     left, right = 0, len(numbers) - 1
+    
+#     while left < right:
+#         s = numbers[left] + numbers[right]
+        
+#         if s == target:
+#             return [left + 1, right + 1]
+#         elif s < target:
+#             left += 1
+#         else:
+#             right -= 1
+
+def lengthOfLongestSubstring(s):
+    char_set = set()
+    left = 0
+    max_length = 0
+    
+    for right in range(len(s)):
+        while s[right] in char_set:
+            char_set.remove(s[left])
+            left += 1
+        
+        char_set.add(s[right])
+        max_length = max(max_length, right - left + 1)
+    
+    return max_length
