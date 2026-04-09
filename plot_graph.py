@@ -35,15 +35,25 @@
 # plt.savefig('all_features_plot.png')
 # plt.show()
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
+# x = [1, 2, 3, 4, 5]
+# y = [2, 4, 6, 8, 10]
 
-plt.scatter(x, y, color='blue', marker='x')
+# plt.scatter(x, y, color='blue', marker='x')
 
-plt.xlabel('X-axis')
-plt.ylabel('Y-axis')
-plt.title('Simple Scatter Plot')
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+# plt.title('Simple Scatter Plot')
 
+# plt.show()
+
+import matplotlib.pyplot as plt 
+import numpy as np      
+days = np.array(['mon', 'tue', 'wed', 'thu', 'fri'])
+temperature = np.array([30, 32, 28, 35, 31])        
+plt.plot(days, temperature, marker='o', linestyle='-', color='b')
+plt.title('Temperature Over 5 Days')        
+plt.xlabel('Day')
+plt.ylabel('Temperature (°C)')  
 plt.show()
