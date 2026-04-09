@@ -48,12 +48,21 @@
 
 # plt.show()
 
-import matplotlib.pyplot as plt 
-import numpy as np      
-days = np.array(['mon', 'tue', 'wed', 'thu', 'fri'])
-temperature = np.array([30, 32, 28, 35, 31])        
-plt.plot(days, temperature, marker='o', linestyle='-', color='b')
-plt.title('Temperature Over 5 Days')        
-plt.xlabel('Day')
-plt.ylabel('Temperature (°C)')  
+# import matplotlib.pyplot as plt 
+# import numpy as np      
+# days = np.array(['mon', 'tue', 'wed', 'thu', 'fri'])
+# temperature = np.array([30, 32, 28, 35, 31])        
+# plt.plot(days, temperature, marker='o', linestyle='-', color='b')
+# plt.title('Temperature Over 5 Days')        
+# plt.xlabel('Day')
+# plt.ylabel('Temperature (°C)')  
+# plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4])   
+y = x * 2                
+
+plt.plot(x, y)
 plt.show()
