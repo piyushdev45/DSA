@@ -137,13 +137,29 @@
 # plt.legend()
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import numpy as np
+# x= np.array([1, 2, 3, 4, 5])
+# y= np.array([2, 4, 6, 8, 10])
+# plt.scatter(x, y, color='blue', marker='x')
+# plt.xlabel('X-axis')    
+# plt.ylabel('Y-axis')
+# plt.title('Simple Scatter Plot')    
+# plt.grid()
+# plt.show()
+
 import matplotlib.pyplot as plt
-import numpy as np
-x= np.array([1, 2, 3, 4, 5])
-y= np.array([2, 4, 6, 8, 10])
-plt.scatter(x, y, color='blue', marker='x')
-plt.xlabel('X-axis')    
-plt.ylabel('Y-axis')
-plt.title('Simple Scatter Plot')    
-plt.grid()
+import numpy as np  
+x1 = np.array([1, 2, 3, 4, 5])
+y1 = np.array([2, 4, 6, 8, 10])
+x2 = np.array([1, 2, 3, 4, 5    ])
+y2 = np.array([10, 8, 6, 4, 2])
+plt.plot(x1, y1, label='y = 2x', color='blue', linestyle='-', marker='o')
+plt.plot(x2, y2, label='y = 12 - 2x', color='red', linestyle='--', marker='x')
+plt.grid(True)  
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')    
+plt.title('Customized Line Plot with Multiple Series')  
+plt.scatter(x1, y1, color='blue', marker='o')
+plt.scatter(x2, y2, color='red', marker='x')      
 plt.show()
