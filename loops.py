@@ -15,3 +15,10 @@ for i in range(10):
     if i == 5:
         break
     print(i)
+
+list1 = [45,65,48,2,4,5,2]
+for i in list1:   
+    if i%2==0:
+      print(i)
+    else:
+       print("none")    
