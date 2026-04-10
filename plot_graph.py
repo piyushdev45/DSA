@@ -79,10 +79,21 @@
 # plt.show() 
 
 # circle graph 
-import matplotlib.pyplot as plt     
-labels = ['A', 'B', 'C', 'D']
-sizes = [15, 30, 45, 10]    
-plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140)
-plt.axis('equal')
-plt.title('Sample Pie Chart')
+# import matplotlib.pyplot as plt     
+# labels = ['A', 'B', 'C', 'D']
+# sizes = [15, 30, 45, 10]    
+# plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140)
+# plt.axis('equal')
+# plt.title('Sample Pie Chart')
+# plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np  
+fruits = ['Apple', 'Banana', 'Cherry', 'Date']
+quantities = [10, 15, 7, 12]    
+plt.bar(fruits, quantities, color=['red', 'yellow', 'pink', 'brown'])
+plt.title('Fruit Quantities')       
+plt.xlabel('Fruits')
+plt.ylabel('Quantities')    
 plt.show()
+ 
