@@ -87,13 +87,23 @@
 # plt.title('Sample Pie Chart')
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import numpy as np  
+# fruits = ['Apple', 'Banana', 'Cherry', 'Date']
+# quantities = [10, 15, 7, 12]    
+# plt.bar(fruits, quantities, color=['red', 'yellow', 'pink', 'brown'])
+# plt.title('Fruit Quantities')       
+# plt.xlabel('Fruits')
+# plt.ylabel('Quantities')    
+# plt.show()
+ 
+
 import matplotlib.pyplot as plt
 import numpy as np  
-fruits = ['Apple', 'Banana', 'Cherry', 'Date']
-quantities = [10, 15, 7, 12]    
-plt.bar(fruits, quantities, color=['red', 'yellow', 'pink', 'brown'])
-plt.title('Fruit Quantities')       
-plt.xlabel('Fruits')
-plt.ylabel('Quantities')    
+digital_coins = ['Bitcoin', 'Ethereum', 'Ripple', 'Litecoin','Ruppe']
+values = [50000, 3000, 1, 2000, 500]  
+plt.bar(digital_coins, values, color=['orange', 'blue', 'green', 'gray','brown'])
+plt.title('Digital Coin Values')        
+plt.xlabel('Digital Coins')
+plt.ylabel('Values (USD)')  
 plt.show()
- 
