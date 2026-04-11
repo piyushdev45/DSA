@@ -148,18 +148,30 @@
 # plt.grid()
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import numpy as np  
+# x1 = np.array([1, 2, 3, 4, 5])
+# y1 = np.array([2, 4, 6, 8, 10])
+# x2 = np.array([1, 2, 3, 4, 5    ])
+# y2 = np.array([10, 8, 6, 4, 2])
+# plt.plot(x1, y1, label='y = 2x', color='blue', linestyle='-', marker='o')
+# plt.plot(x2, y2, label='y = 12 - 2x', color='red', linestyle='--', marker='x')
+# plt.grid(True)  
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')    
+# plt.title('Customized Line Plot with Multiple Series')  
+# plt.scatter(x1, y1, color='blue', marker='o')
+# plt.scatter(x2, y2, color='red', marker='x')      
+# plt.show()
+
 import matplotlib.pyplot as plt
 import numpy as np  
-x1 = np.array([1, 2, 3, 4, 5])
-y1 = np.array([2, 4, 6, 8, 10])
-x2 = np.array([1, 2, 3, 4, 5    ])
-y2 = np.array([10, 8, 6, 4, 2])
-plt.plot(x1, y1, label='y = 2x', color='blue', linestyle='-', marker='o')
-plt.plot(x2, y2, label='y = 12 - 2x', color='red', linestyle='--', marker='x')
-plt.grid(True)  
-plt.xlabel('X-axis')
-plt.ylabel('Y-axis')    
-plt.title('Customized Line Plot with Multiple Series')  
-plt.scatter(x1, y1, color='blue', marker='o')
-plt.scatter(x2, y2, color='red', marker='x')      
+# Generate random data for the histogram
+data = np.random.randn(1000)
+
+# Plotting a basic histogram
+plt.hist(data, bins=30, color='skyblue', edgecolor='black')
+plt.xlabel('Values')
+plt.ylabel('Frequency')
+plt.title('Basic Histogram')
 plt.show()
