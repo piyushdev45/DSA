@@ -164,32 +164,50 @@
 # plt.scatter(x2, y2, color='red', marker='x')      
 # plt.show()
 
-import matplotlib.pyplot as plt
-import numpy as np  
-# Generate random data for the histogram
-data = np.random.randn(1000)
+# import matplotlib.pyplot as plt
+# import numpy as np  
+# # Generate random data for the histogram
+# data = np.random.randn(1000)
 
-# Plotting a basic histogram
-plt.hist(data, bins=30, color='skyblue', edgecolor='black')
-plt.xlabel('Values')
-plt.ylabel('Frequency')
-plt.title('Basic Histogram')
-plt.show()
+# # Plotting a basic histogram
+# plt.hist(data, bins=30, color='skyblue', edgecolor='black')
+# plt.xlabel('Values')
+# plt.ylabel('Frequency')
+# plt.title('Basic Histogram')
+# plt.show()
 
-import matplotlib.pyplot as plt
-import seaborn as sns
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# import numpy as np
+
+# # Generate random data for the histogram
+# data = np.random.randn(1000)
+
+# # Creating a customized histogram with a density plot
+# sns.histplot(data, bins=30, kde=True, color='lightgreen', edgecolor='red')
+
+# # Adding labels and title
+# plt.xlabel('Values')
+# plt.ylabel('Density')
+# plt.title('Customized Histogram with Density Plot')
+
+# # Display the plot
+# plt.show()
+
+# Import libraries
+from matplotlib import pyplot as plt
 import numpy as np
 
-# Generate random data for the histogram
-data = np.random.randn(1000)
 
-# Creating a customized histogram with a density plot
-sns.histplot(data, bins=30, kde=True, color='lightgreen', edgecolor='red')
+# Creating dataset
+cars = ['AUDI', 'BMW', 'FORD',
+        'TESLA', 'JAGUAR', 'MERCEDES']
 
-# Adding labels and title
-plt.xlabel('Values')
-plt.ylabel('Density')
-plt.title('Customized Histogram with Density Plot')
+data = [23, 17, 35, 29, 12, 41]
 
-# Display the plot
+# Creating plot
+fig = plt.figure(figsize=(10, 7))
+plt.pie(data, labels=cars)
+
+# show plot
 plt.show()
