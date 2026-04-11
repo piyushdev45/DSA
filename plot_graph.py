@@ -194,20 +194,33 @@
 # # Display the plot
 # plt.show()
 
-# Import libraries
-from matplotlib import pyplot as plt
-import numpy as np
+# # Import libraries
+# from matplotlib import pyplot as plt
+# import numpy as np
 
 
-# Creating dataset
-cars = ['AUDI', 'BMW', 'FORD',
-        'TESLA', 'JAGUAR', 'MERCEDES']
+# # Creating dataset
+# cars = ['AUDI', 'BMW', 'FORD',
+#         'TESLA', 'JAGUAR', 'MERCEDES']
 
-data = [23, 17, 35, 29, 12, 41]
+# data = [23, 17, 35, 29, 12, 41]
 
-# Creating plot
-fig = plt.figure(figsize=(10, 7))
-plt.pie(data, labels=cars)
+# # Creating plot
+# fig = plt.figure(figsize=(10, 7))
+# plt.pie(data, labels=cars)
 
-# show plot
+# # show plot
+# plt.show()
+
+import matplotlib.pyplot as plt
+
+x = range(1, 11)
+markers = ['o', 's', '^', 'v', 'D', '*', '+', 'x']
+
+for i, marker in enumerate(markers):
+    plt.plot(x, [i*2]*10, marker=marker, linestyle='')
+
+plt.title('Different Matplotlib Markers')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
 plt.show()
