@@ -251,14 +251,27 @@
 # ax2.grid(True)
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# x = np.linspace(0, 2 * np.pi, 400)
+# y = np.sin(x ** 2)
+
+# plt.plot(x, y, 'green')
+# plt.title("Plot with custom grid lines")
+# plt.grid(True, color='grey', linewidth=1.4, linestyle='-.')
+
+# plt.show()
+
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 2 * np.pi, 400)
-y = np.sin(x ** 2)
+# Creating subplots
+fig, ax = plt.subplots(3, 3)
 
-plt.plot(x, y, 'green')
-plt.title("Plot with custom grid lines")
-plt.grid(True, color='grey', linewidth=1.4, linestyle='-.')
+# Plot random data in each subplot
+for row in ax:
+    for col in row:
+        col.plot(np.random.randint(0, 5, 5), np.random.randint(0, 5, 5))
 
 plt.show()
