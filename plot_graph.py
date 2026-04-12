@@ -212,15 +212,25 @@
 # # show plot
 # plt.show()
 
+# import matplotlib.pyplot as plt
+
+# x = range(1, 11)
+# markers = ['o', 's', '^', 'v', 'D', '*', '+', 'x']
+
+# for i, marker in enumerate(markers):
+#     plt.plot(x, [i*2]*10, marker=marker, linestyle='')
+
+# plt.title('Different Matplotlib Markers')
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+# plt.show()
+
 import matplotlib.pyplot as plt
 
-x = range(1, 11)
-markers = ['o', 's', '^', 'v', 'D', '*', '+', 'x']
+x = [4,1,7,5,8]
+plt.plot(x,'o-r')  # Red circles with a solid line
 
-for i, marker in enumerate(markers):
-    plt.plot(x, [i*2]*10, marker=marker, linestyle='')
-
-plt.title('Different Matplotlib Markers')
+plt.title('Plot with fmt')
 plt.xlabel('X-axis')
-plt.ylabel('Y-axis')
+
 plt.show()
