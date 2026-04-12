@@ -225,12 +225,28 @@
 # plt.ylabel('Y-axis')
 # plt.show()
 
+# import matplotlib.pyplot as plt
+
+# x = [4,1,7,5,8]
+# plt.plot(x,'o-r')  # Red circles with a solid line
+
+# plt.title('Plot with fmt')
+# plt.xlabel('X-axis')
+
+# plt.show()
+
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [4,1,7,5,8]
-plt.plot(x,'o-r')  # Red circles with a solid line
+x1 = np.linspace(0, 5, 100)
+y1 = np.cos(2 * np.pi * x1) * np.exp(-x1)
 
-plt.title('Plot with fmt')
-plt.xlabel('X-axis')
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
 
+ax1.plot(x1, y1)
+ax1.set_title('Plot without grid')
+
+ax2.plot(x1, y1)
+ax2.set_title("Plot with grid")
+ax2.grid(True)
 plt.show()
