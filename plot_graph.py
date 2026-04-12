@@ -235,18 +235,30 @@
 
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# x1 = np.linspace(0, 5, 100)
+# y1 = np.cos(2 * np.pi * x1) * np.exp(-x1)
+
+# fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+
+# ax1.plot(x1, y1)
+# ax1.set_title('Plot without grid')
+
+# ax2.plot(x1, y1)
+# ax2.set_title("Plot with grid")
+# ax2.grid(True)
+# plt.show()
+
 import matplotlib.pyplot as plt
 import numpy as np
 
-x1 = np.linspace(0, 5, 100)
-y1 = np.cos(2 * np.pi * x1) * np.exp(-x1)
+x = np.linspace(0, 2 * np.pi, 400)
+y = np.sin(x ** 2)
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+plt.plot(x, y, 'green')
+plt.title("Plot with custom grid lines")
+plt.grid(True, color='grey', linewidth=1.4, linestyle='-.')
 
-ax1.plot(x1, y1)
-ax1.set_title('Plot without grid')
-
-ax2.plot(x1, y1)
-ax2.set_title("Plot with grid")
-ax2.grid(True)
 plt.show()
