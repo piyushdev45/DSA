@@ -263,15 +263,23 @@
 
 # plt.show()
 
-import matplotlib.pyplot as plt
-import numpy as np
+# import matplotlib.pyplot as plt
+# import numpy as np
 
-# Creating subplots
-fig, ax = plt.subplots(3, 3)
+# # Creating subplots
+# fig, ax = plt.subplots(3, 3)
 
-# Plot random data in each subplot
-for row in ax:
-    for col in row:
-        col.plot(np.random.randint(0, 5, 5), np.random.randint(0, 5, 5))
+# # Plot random data in each subplot
+# for row in ax:
+#     for col in row:
+#         col.plot(np.random.randint(0, 5, 5), np.random.randint(0, 5, 5))
 
+# plt.show()
+
+import numpy as np 
+import matplotlib.pyplot as plt 
+from matplotlib import style 
+data = np.random.randn(50) 
+plt.style.use('Solarize_Light2') 
+plt.plot(data) 
 plt.show()
