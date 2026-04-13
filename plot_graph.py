@@ -306,12 +306,22 @@
 
 # plt.show()
 
+# import matplotlib.pyplot as plt
+
+# x = [1, 3, 5, 7, 9]
+# y = [5, 7, 2, 8, 4]
+
+# plt.figure().set_figwidth(20)
+# plt.plot(x, y)
+
+# plt.show()
+
 import matplotlib.pyplot as plt
 
-x = [1, 3, 5, 7, 9]
-y = [5, 7, 2, 8, 4]
+x = [1, 2, 3, 4, 5]
+y = [12, 5, 18, 7, 9]
 
-plt.figure().set_figwidth(20)
+plt.figure().set_figheight(5)
 plt.plot(x, y)
 
 plt.show()
