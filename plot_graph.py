@@ -284,10 +284,24 @@
 # plt.plot(data) 
 # plt.show()
 
-import numpy as np 
-import matplotlib.pyplot as plt 
-from matplotlib import style 
-data = np.random.randn(50) 
-plt.style.use('dark_background') 
-plt.plot(data) 
+# import numpy as np 
+# import matplotlib.pyplot as plt 
+# from matplotlib import style 
+# data = np.random.randn(50) 
+# plt.style.use('dark_background') 
+# plt.plot(data) 
+# plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-5, 5, 100)
+y = x**2 
+plt.figure(figsize=(5, 2))
+plt.plot(x, y)
+
+plt.title('Plot of y = x^2')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
 plt.show()
