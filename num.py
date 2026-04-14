@@ -212,3 +212,10 @@
 # a2 = array([4, 5, 6])        
 # a3 = dstack((a1, a2))
 # print(a3)
+
+import numpy as np
+
+arr = np.array([10, 25, 30, 15, 5])
+
+filtered = arr[arr > 20]
+print("Elements > 20:", filtered)
