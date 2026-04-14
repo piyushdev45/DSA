@@ -344,12 +344,22 @@
 # plt.title("Histogram with transparent bars")
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# x = ['A', 'B', 'C']
+# y = [5, 8, 6]
+
+# for i in range(len(x)):
+#     plt.bar(x[i], y[i], color='green', alpha=(i + 1)/4)
+
+# plt.title("Bar chart with varying alpha")
+# plt.show()
+
 import matplotlib.pyplot as plt
-x = ['A', 'B', 'C']
-y = [5, 8, 6]
 
-for i in range(len(x)):
-    plt.bar(x[i], y[i], color='green', alpha=(i + 1)/4)
+x = [1, 2, 3, 4]
+y = [1, 4, 9, 16]
+fill = plt.fill_between(x, y, color='red')
 
-plt.title("Bar chart with varying alpha")
+fill.set_alpha(0.4)
+plt.title("Fill with alpha using set_alpha")
 plt.show()
