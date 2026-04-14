@@ -316,12 +316,21 @@
 
 # plt.show()
 
+# import matplotlib.pyplot as plt
+
+# x = [1, 2, 3, 4, 5]
+# y = [12, 5, 18, 7, 9]
+
+# plt.figure().set_figheight(5)
+# plt.plot(x, y)
+
+# plt.show()
+
 import matplotlib.pyplot as plt
 
-x = [1, 2, 3, 4, 5]
-y = [12, 5, 18, 7, 9]
+x = [0, 5, 10, 15]
+y = [0, 1, 2, 3]
 
-plt.figure().set_figheight(5)
-plt.plot(x, y)
-
+plt.plot(x, y, color='blue', alpha=0.3)
+plt.title("Line plot with alpha=0.3")
 plt.show()
