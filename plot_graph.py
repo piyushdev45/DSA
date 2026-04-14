@@ -335,11 +335,21 @@
 # plt.title("Line plot with alpha=0.3")
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# d = np.random.randn(1000)
+
+# plt.hist(d, bins=30, color='orange', alpha=0.4)
+# plt.title("Histogram with transparent bars")
+# plt.show()
+
 import matplotlib.pyplot as plt
-import numpy as np
+x = ['A', 'B', 'C']
+y = [5, 8, 6]
 
-d = np.random.randn(1000)
+for i in range(len(x)):
+    plt.bar(x[i], y[i], color='green', alpha=(i + 1)/4)
 
-plt.hist(d, bins=30, color='orange', alpha=0.4)
-plt.title("Histogram with transparent bars")
+plt.title("Bar chart with varying alpha")
 plt.show()
