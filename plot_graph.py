@@ -326,11 +326,20 @@
 
 # plt.show()
 
+# import matplotlib.pyplot as plt
+
+# x = [0, 5, 10, 15]
+# y = [0, 1, 2, 3]
+
+# plt.plot(x, y, color='blue', alpha=0.3)
+# plt.title("Line plot with alpha=0.3")
+# plt.show()
+
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [0, 5, 10, 15]
-y = [0, 1, 2, 3]
+d = np.random.randn(1000)
 
-plt.plot(x, y, color='blue', alpha=0.3)
-plt.title("Line plot with alpha=0.3")
+plt.hist(d, bins=30, color='orange', alpha=0.4)
+plt.title("Histogram with transparent bars")
 plt.show()
