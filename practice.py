@@ -269,8 +269,13 @@
 # grp = df.groupby('Name')
 # grp['Age'].agg([np.sum, np.mean, np.std])
 
+# import numpy as np
+
+# # Creating a 3x3 identity matrix
+# identity_matrix = np.eye(3)
+# print(identity_matrix)
 import numpy as np
 
-# Creating a 3x3 identity matrix
-identity_matrix = np.eye(3)
-print(identity_matrix)
+# Creating a 3x5 rectangular matrix
+rectangular_matrix = np.eye(3, 5)
+print(rectangular_matrix)
