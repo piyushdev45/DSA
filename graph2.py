@@ -11,7 +11,14 @@ import matplotlib.pyplot as plt
 # sns.lineplot(x="timepoint", y="signal", hue="region", data=fmri)
 # plt.show()
 
+# tips = sns.load_dataset("tips")
+
+# sns.scatterplot(x="total_bill", y="tip", hue="day", data=tips)
+# plt.show()
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+
 tips = sns.load_dataset("tips")
 
-sns.scatterplot(x="total_bill", y="tip", hue="day", data=tips)
+sns.barplot(x="day", y="total_bill", data=tips)
 plt.show()
