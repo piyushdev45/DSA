@@ -274,8 +274,18 @@
 # # Creating a 3x3 identity matrix
 # identity_matrix = np.eye(3)
 # print(identity_matrix)
-import numpy as np
+# import numpy as np
 
-# Creating a 3x5 rectangular matrix
-rectangular_matrix = np.eye(3, 5)
-print(rectangular_matrix)
+# # Creating a 3x5 rectangular matrix
+# rectangular_matrix = np.eye(3, 5)
+# print(rectangular_matrix)
+
+import pandas as pd
+
+data = {
+    "Name": ["Aman", "Riya", "John"],
+    "Age": [21, 22, 23]
+}
+
+df = pd.DataFrame(data)
+print(df)
