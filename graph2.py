@@ -33,7 +33,14 @@ import matplotlib.pyplot as plt
 # import seaborn as sns
 # import matplotlib.pyplot as plt
 
-tips = sns.load_dataset("tips")
+# tips = sns.load_dataset("tips")
 
-sns.histplot(tips["total_bill"], kde=True)
+# sns.histplot(tips["total_bill"], kde=True)
+# plt.show()
+
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+
+iris = sns.load_dataset("iris")
+sns.pairplot(iris, hue="species")
 plt.show()
