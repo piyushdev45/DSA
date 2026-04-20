@@ -4,8 +4,8 @@
 # sns.violinplot(x="day", y="total_bill", data=tips, hue="sex", split=True)
 # plt.title("Violin Plot of Total Bill by Day and Gender")
 # plt.show()
-import seaborn as sns
-import matplotlib.pyplot as plt
+# import seaborn as sns
+# import matplotlib.pyplot as plt
 
 # fmri = sns.load_dataset("fmri")
 # sns.lineplot(x="timepoint", y="signal", hue="region", data=fmri)
@@ -56,8 +56,19 @@ import matplotlib.pyplot as plt
 # plt.title('Daily Spending (Custom Data)')
 # plt.show()
 
-sns.set(style="whitegrid")
-iris = sns.load_dataset("iris")
-sns.swarmplot(x="species", y="sepal_length", data=iris)
-plt.title("Swarm Plot of Sepal Length by Species")
+# sns.set(style="whitegrid")
+# iris = sns.load_dataset("iris")
+# sns.swarmplot(x="species", y="sepal_length", data=iris)
+# plt.title("Swarm Plot of Sepal Length by Species")
+# plt.show()
+
+import matplotlib.pyplot as plt
+
+plt.plot([0, 1], [10, 11], label='Line 1')
+plt.plot([0, 1], [11, 10], label='Line 2')
+plt.scatter([0, 1], [10.5, 10.5], color='blue', marker='o', label='Dots')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Line and Dot Plot')
+plt.legend()
 plt.show()
