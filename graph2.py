@@ -62,13 +62,30 @@
 # plt.title("Swarm Plot of Sepal Length by Species")
 # plt.show()
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-plt.plot([0, 1], [10, 11], label='Line 1')
-plt.plot([0, 1], [11, 10], label='Line 2')
-plt.scatter([0, 1], [10.5, 10.5], color='blue', marker='o', label='Dots')
-plt.xlabel('X-axis')
-plt.ylabel('Y-axis')
-plt.title('Simple Line and Dot Plot')
+# plt.plot([0, 1], [10, 11], label='Line 1')
+# plt.plot([0, 1], [11, 10], label='Line 2')
+# plt.scatter([0, 1], [10.5, 10.5], color='blue', marker='o', label='Dots')
+# plt.xlabel('X-axis')
+# plt.ylabel('Y-axis')
+# plt.title('Simple Line and Dot Plot')
+# plt.legend()
+# plt.show()
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Apply Seaborn theme
+sns.set_theme(style="darkgrid")
+
+# Creating a simple Matplotlib plot
+x = [1, 2, 3, 4, 5]
+y = [10, 12, 15, 18, 22]
+
+plt.plot(x, y, marker='o', linestyle='-', color='blue', label="Trend")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.title("Matplotlib Plot with Seaborn Theme")
 plt.legend()
 plt.show()
