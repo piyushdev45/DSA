@@ -128,17 +128,25 @@
 # plt.legend()
 # plt.show()
 
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+
+# # Set a Seaborn color palette
+# sns.set_palette("Set2")
+
+# # Create some example data
+# data = [3, 5, 7, 9, 2, 4, 6, 8]
+
+# # Create a simple bar plot using the set color palette
+# sns.barplot(x=range(len(data)), y=data)
+
+# plt.show()
+
+
+from matplotlib import pyplot as plt
 import seaborn as sns
-import matplotlib.pyplot as plt
 
-# Set a Seaborn color palette
-sns.set_palette("Set2")
-
-# Create some example data
-data = [3, 5, 7, 9, 2, 4, 6, 8]
-
-# Create a simple bar plot using the set color palette
-sns.barplot(x=range(len(data)), y=data)
-
+cp = sns.color_palette()
+sns.palplot(cp)
 plt.show()
 
