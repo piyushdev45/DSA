@@ -143,10 +143,16 @@
 # plt.show()
 
 
+# from matplotlib import pyplot as plt
+# import seaborn as sns
+
+# cp = sns.color_palette()
+# sns.palplot(cp)
+# plt.show()
+
+
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-cp = sns.color_palette()
-sns.palplot(cp)
+sns.palplot(sns.color_palette("Greys"))
 plt.show()
-
