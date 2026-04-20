@@ -91,23 +91,39 @@
 # plt.show()
 
 
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# import pandas as pd
+
+# data = pd.DataFrame({
+#     'Year': [2018, 2019, 2020, 2021, 2022],
+#     'Sales': [100, 150, 200, 250, 300]
+# })
+
+# plt.figure(figsize=(8, 5))
+# sns.lineplot(x='Year', y='Sales', data=data, marker='o')
+
+# # Customizing using Matplotlib
+# plt.title("Yearly Sales Growth", fontsize=14, fontweight='bold')
+# plt.xlabel("Year", fontsize=12)
+# plt.ylabel("Total Sales", fontsize=12)
+# plt.xticks(rotation=45)
+# plt.grid(True, linestyle='--')
+
+# plt.show()
+
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pandas as pd
 
-data = pd.DataFrame({
-    'Year': [2018, 2019, 2020, 2021, 2022],
-    'Sales': [100, 150, 200, 250, 300]
-})
-
+x = np.linspace(0, 10, 20)
+y = np.sin(x)
 plt.figure(figsize=(8, 5))
-sns.lineplot(x='Year', y='Sales', data=data, marker='o')
+sns.lineplot(x=x, y=y, color='blue', label='Sine Wave')
+plt.scatter(x, y, color='red', marker='o', label="Data Points")
 
-# Customizing using Matplotlib
-plt.title("Yearly Sales Growth", fontsize=14, fontweight='bold')
-plt.xlabel("Year", fontsize=12)
-plt.ylabel("Total Sales", fontsize=12)
-plt.xticks(rotation=45)
-plt.grid(True, linestyle='--')
-
+plt.title("Seaborn Line Plot with Matplotlib Scatter Overlay")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.legend()
 plt.show()
