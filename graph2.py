@@ -112,18 +112,33 @@
 
 # plt.show()
 
-import numpy as np
-import matplotlib.pyplot as plt
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+
+# x = np.linspace(0, 10, 20)
+# y = np.sin(x)
+# plt.figure(figsize=(8, 5))
+# sns.lineplot(x=x, y=y, color='blue', label='Sine Wave')
+# plt.scatter(x, y, color='red', marker='o', label="Data Points")
+
+# plt.title("Seaborn Line Plot with Matplotlib Scatter Overlay")
+# plt.xlabel("X-axis")
+# plt.ylabel("Y-axis")
+# plt.legend()
+# plt.show()
+
 import seaborn as sns
+import matplotlib.pyplot as plt
 
-x = np.linspace(0, 10, 20)
-y = np.sin(x)
-plt.figure(figsize=(8, 5))
-sns.lineplot(x=x, y=y, color='blue', label='Sine Wave')
-plt.scatter(x, y, color='red', marker='o', label="Data Points")
+# Set a Seaborn color palette
+sns.set_palette("Set2")
 
-plt.title("Seaborn Line Plot with Matplotlib Scatter Overlay")
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
-plt.legend()
+# Create some example data
+data = [3, 5, 7, 9, 2, 4, 6, 8]
+
+# Create a simple bar plot using the set color palette
+sns.barplot(x=range(len(data)), y=data)
+
 plt.show()
+
