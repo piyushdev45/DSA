@@ -73,19 +73,41 @@
 # plt.legend()
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+
+# # Apply Seaborn theme
+# sns.set_theme(style="darkgrid")
+
+# # Creating a simple Matplotlib plot
+# x = [1, 2, 3, 4, 5]
+# y = [10, 12, 15, 18, 22]
+
+# plt.plot(x, y, marker='o', linestyle='-', color='blue', label="Trend")
+# plt.xlabel("X-axis")
+# plt.ylabel("Y-axis")
+# plt.title("Matplotlib Plot with Seaborn Theme")
+# plt.legend()
+# plt.show()
+
+
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pandas as pd
 
-# Apply Seaborn theme
-sns.set_theme(style="darkgrid")
+data = pd.DataFrame({
+    'Year': [2018, 2019, 2020, 2021, 2022],
+    'Sales': [100, 150, 200, 250, 300]
+})
 
-# Creating a simple Matplotlib plot
-x = [1, 2, 3, 4, 5]
-y = [10, 12, 15, 18, 22]
+plt.figure(figsize=(8, 5))
+sns.lineplot(x='Year', y='Sales', data=data, marker='o')
 
-plt.plot(x, y, marker='o', linestyle='-', color='blue', label="Trend")
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
-plt.title("Matplotlib Plot with Seaborn Theme")
-plt.legend()
+# Customizing using Matplotlib
+plt.title("Yearly Sales Growth", fontsize=14, fontweight='bold')
+plt.xlabel("Year", fontsize=12)
+plt.ylabel("Total Sales", fontsize=12)
+plt.xticks(rotation=45)
+plt.grid(True, linestyle='--')
+
 plt.show()
