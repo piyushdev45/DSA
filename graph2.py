@@ -151,8 +151,21 @@
 # plt.show()
 
 
-from matplotlib import pyplot as plt
-import seaborn as sns
+# from matplotlib import pyplot as plt
+# import seaborn as sns
 
-sns.palplot(sns.color_palette("Greys"))
+# sns.palplot(sns.color_palette("Greys"))
+# plt.show()
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
+sns.set(style ="ticks") 
+tips = sns.load_dataset('tips')
+
+sns.relplot(x ="total_bill",
+            y ="tip",
+            kind ="line",
+            data = tips)
 plt.show()
