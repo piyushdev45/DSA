@@ -170,17 +170,31 @@
 #             data = tips)
 # plt.show()
 
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+
+
+# sns.set(style ="ticks") 
+# tips = sns.load_dataset('tips')
+# markers = {"Lunch": "s", "Dinner": "X"}
+
+# ax = sns.scatterplot(x ="total_bill",
+#                      y ="tip", 
+#                      style ="time",
+#                      markers = markers,
+#                      data = tips)
+# plt.show()
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-sns.set(style ="ticks") 
-tips = sns.load_dataset('tips')
-markers = {"Lunch": "s", "Dinner": "X"}
+sns.set(style = 'whitegrid')
+dots = sns.load_dataset("dots").query("align == 'dots'")
 
-ax = sns.scatterplot(x ="total_bill",
-                     y ="tip", 
-                     style ="time",
-                     markers = markers,
-                     data = tips)
+sns.lineplot(x ="time", 
+             y ="firing_rate",
+             hue ="coherence",
+             style ="choice",
+             data = dots)
 plt.show()
