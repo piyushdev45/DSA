@@ -157,15 +157,30 @@
 # sns.palplot(sns.color_palette("Greys"))
 # plt.show()
 
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+
+
+# sns.set(style ="ticks") 
+# tips = sns.load_dataset('tips')
+
+# sns.relplot(x ="total_bill",
+#             y ="tip",
+#             kind ="line",
+#             data = tips)
+# plt.show()
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 
 sns.set(style ="ticks") 
 tips = sns.load_dataset('tips')
+markers = {"Lunch": "s", "Dinner": "X"}
 
-sns.relplot(x ="total_bill",
-            y ="tip",
-            kind ="line",
-            data = tips)
+ax = sns.scatterplot(x ="total_bill",
+                     y ="tip", 
+                     style ="time",
+                     markers = markers,
+                     data = tips)
 plt.show()
