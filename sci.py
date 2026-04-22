@@ -66,7 +66,10 @@
 # print(A)
 
 #special function 
-from scipy.special import cbrt
+# from scipy.special import cbrt
 
-print(cbrt(64))    
-print(cbrt(78))
+# print(cbrt(64))    
+# print(cbrt(78))
+
+from scipy.special import comb
+print(comb(4, 1))
