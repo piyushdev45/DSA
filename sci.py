@@ -59,8 +59,14 @@
 # print(I)
 # print(err)
 
-from scipy.integrate import dblquad
+# from scipy.integrate import dblquad
 
-A = dblquad(lambda x, y: x * y, 0, 0.5,              
-               lambda x: 0, lambda x: 1 - 2*x)        
-print(A)
+# A = dblquad(lambda x, y: x * y, 0, 0.5,              
+#                lambda x: 0, lambda x: 1 - 2*x)        
+# print(A)
+
+#special function 
+from scipy.special import cbrt
+
+print(cbrt(64))    
+print(cbrt(78))
