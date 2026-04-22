@@ -50,11 +50,17 @@
 
 
 #integration using scipy
-from scipy.integrate import quad
+# from scipy.integrate import quad
 
-def f(x):
-    return 3 * x**2 + 1
+# def f(x):
+#     return 3 * x**2 + 1
     
-I, err = quad(f, 0, 1)
-print(I)
-print(err)
+# I, err = quad(f, 0, 1)
+# print(I)
+# print(err)
+
+from scipy.integrate import dblquad
+
+A = dblquad(lambda x, y: x * y, 0, 0.5,              
+               lambda x: 0, lambda x: 1 - 2*x)        
+print(A)
