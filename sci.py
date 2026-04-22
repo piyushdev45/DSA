@@ -30,6 +30,20 @@
 # res = scipy.constants.find("proton")
 # print(res, end='\n')
 
+# import scipy.constants as const
+# # This return a tuple(vslue, unit, uncertainty)
+# print(const.physical_constants['alpha particle mass'])
+
+
 import scipy.constants as const
-# This return a tuple(vslue, unit, uncertainty)
-print(const.physical_constants['alpha particle mass'])
+
+# Area of a circle using pi
+def area_of_circle(r):
+    return const.pi * r * r
+
+# Gravitational force
+def force_gravity(M, m, dist):
+    return (const.G * M * m) / (dist ** 2)
+
+print("Area of Circle:", area_of_circle(5))
+print("Gravitational Force:", force_gravity(10, 5, 1))
