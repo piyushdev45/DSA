@@ -16,12 +16,16 @@
 # result, error = integrate.quad(f, 0, 1)
 # print(result)
 
-import scipy.constants as const
+# import scipy.constants as const
 
-print("Pi:", const.pi)
-print("Golden ratio:", const.golden_ratio)
-print("Speed of light:", const.c)
-print("Gravitational constant:", const.G)
-print("Gas constant (R):", const.R)
-print("Boltzmann constant:", const.k)
-print("Proton mass:", const.proton_mass)
+# print("Pi:", const.pi)
+# print("Golden ratio:", const.golden_ratio)
+# print("Speed of light:", const.c)
+# print("Gravitational constant:", const.G)
+# print("Gas constant (R):", const.R)
+# print("Boltzmann constant:", const.k)
+# print("Proton mass:", const.proton_mass)
+
+import scipy
+res = scipy.constants.find("proton")
+print(res, end='\n')
