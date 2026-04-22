@@ -26,6 +26,10 @@
 # print("Boltzmann constant:", const.k)
 # print("Proton mass:", const.proton_mass)
 
-import scipy
-res = scipy.constants.find("proton")
-print(res, end='\n')
+# import scipy
+# res = scipy.constants.find("proton")
+# print(res, end='\n')
+
+import scipy.constants as const
+# This return a tuple(vslue, unit, uncertainty)
+print(const.physical_constants['alpha particle mass'])
