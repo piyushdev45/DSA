@@ -85,12 +85,26 @@
 # csr = csr_matrix((d, (r, c)), shape=(4, 5))
 # print(csr.toarray())
 
+# import numpy as np
+# from scipy.sparse import csc_matrix
+
+# d = np.array([3, 4, 5, 7, 2, 6])     
+# r = np.array([0, 0, 1, 1, 3, 3])     
+# c = np.array([2, 4, 2, 3, 1, 2])     
+
+# csc = csc_matrix((d, (r, c)), shape=(4, 5)) 
+# print(csc.toarray())
+
+#lil matrix
 import numpy as np
-from scipy.sparse import csc_matrix
+from scipy.sparse import lil_matrix
 
-d = np.array([3, 4, 5, 7, 2, 6])     
-r = np.array([0, 0, 1, 1, 3, 3])     
-c = np.array([2, 4, 2, 3, 1, 2])     
+lil = lil_matrix((4, 5))
+lil[0, 2] = 3
+lil[0, 4] = 4
+lil[1, 2] = 5
+lil[1, 3] = 7
+lil[3, 1] = 2
+lil[3, 2] = 6
 
-csc = csc_matrix((d, (r, c)), shape=(4, 5)) 
-print(csc.toarray())
+print(lil.toarray())
