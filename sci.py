@@ -109,15 +109,24 @@
 
 # print(lil.toarray())
 
+# import numpy as np
+# from scipy.sparse import dok_matrix
+
+# dok = dok_matrix((4, 5))
+# dok[0, 2] = 3
+# dok[0, 4] = 4
+# dok[1, 2] = 5
+# dok[1, 3] = 7
+# dok[3, 1] = 2
+# dok[3, 2] = 6
+
+# print(dok.toarray())
+
 import numpy as np
-from scipy.sparse import dok_matrix
+from scipy.sparse import dia_matrix
 
-dok = dok_matrix((4, 5))
-dok[0, 2] = 3
-dok[0, 4] = 4
-dok[1, 2] = 5
-dok[1, 3] = 7
-dok[3, 1] = 2
-dok[3, 2] = 6
+data = np.array([[3, 5, 6, 7]])  
+offsets = np.array([0])         
 
-print(dok.toarray())
+dia = dia_matrix((data, offsets), shape=(4, 5))
+print(dia.toarray())
