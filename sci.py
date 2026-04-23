@@ -96,15 +96,28 @@
 # print(csc.toarray())
 
 #lil matrix
+# import numpy as np
+# from scipy.sparse import lil_matrix
+
+# lil = lil_matrix((4, 5))
+# lil[0, 2] = 3
+# lil[0, 4] = 4
+# lil[1, 2] = 5
+# lil[1, 3] = 7
+# lil[3, 1] = 2
+# lil[3, 2] = 6
+
+# print(lil.toarray())
+
 import numpy as np
-from scipy.sparse import lil_matrix
+from scipy.sparse import dok_matrix
 
-lil = lil_matrix((4, 5))
-lil[0, 2] = 3
-lil[0, 4] = 4
-lil[1, 2] = 5
-lil[1, 3] = 7
-lil[3, 1] = 2
-lil[3, 2] = 6
+dok = dok_matrix((4, 5))
+dok[0, 2] = 3
+dok[0, 4] = 4
+dok[1, 2] = 5
+dok[1, 3] = 7
+dok[3, 1] = 2
+dok[3, 2] = 6
 
-print(lil.toarray())
+print(dok.toarray())
