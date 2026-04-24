@@ -122,11 +122,22 @@
 
 # print(dok.toarray())
 
+# import numpy as np
+# from scipy.sparse import dia_matrix
+
+# data = np.array([[3, 5, 6, 7]])  
+# offsets = np.array([0])         
+
+# dia = dia_matrix((data, offsets), shape=(4, 5))
+# print(dia.toarray())
+
 import numpy as np
-from scipy.sparse import dia_matrix
+from scipy.sparse import csr_matrix
+from scipy.sparse.csgraph import csgraph_from_dense
 
-data = np.array([[3, 5, 6, 7]])  
-offsets = np.array([0])         
+# Creating a 3 * 3 sparse matrix .
+sparseMatrix = csr_matrix((3, 3), dtype=np.int8).toarray()
 
-dia = dia_matrix((data, offsets), shape=(4, 5))
-print(dia.toarray())
+# converting sparse matrix to graph
+graph = csgraph_from_dense(sparseMatrix)
+print(graph.toarray())
