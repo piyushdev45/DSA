@@ -131,13 +131,13 @@
 # dia = dia_matrix((data, offsets), shape=(4, 5))
 # print(dia.toarray())
 
-import numpy as np
-from scipy.sparse import csr_matrix
-from scipy.sparse.csgraph import csgraph_from_dense
+# import numpy as np
+# from scipy.sparse import csr_matrix
+# from scipy.sparse.csgraph import csgraph_from_dense
 
-# Creating a 3 * 3 sparse matrix .
-sparseMatrix = csr_matrix((3, 3), dtype=np.int8).toarray()
+# # Creating a 3 * 3 sparse matrix .
+# sparseMatrix = csr_matrix((3, 3), dtype=np.int8).toarray()
 
-# converting sparse matrix to graph
-graph = csgraph_from_dense(sparseMatrix)
-print(graph.toarray())
+# # converting sparse matrix to graph
+# graph = csgraph_from_dense(sparseMatrix)
+# print(graph.toarray())
