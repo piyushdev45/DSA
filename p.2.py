@@ -1,16 +1,33 @@
-def longest_substring(s):
-    char_set = set()
-    left = 0
-    max_length = 0
+# def longest_substring(s):
+#     char_set = set()
+#     left = 0
+#     max_length = 0
 
-    for right in range(len(s)):
-        while s[right] in char_set:
-            char_set.remove(s[left])
-            left += 1
+#     for right in range(len(s)):
+#         while s[right] in char_set:
+#             char_set.remove(s[left])
+#             left += 1
 
-        char_set.add(s[right])
-        max_length = max(max_length, right - left + 1)
+#         char_set.add(s[right])
+#         max_length = max(max_length, right - left + 1)
 
-    return max_length
-s = "abcabcbb"
-print(longest_substring(s))
+#     return max_length
+# s = "abcabcbb"
+# print(longest_substring(s))
+
+def product_except_self(nums):
+    res = [1] * len(nums)
+
+    prefix = 1
+    for i in range(len(nums)):
+        res[i] = prefix
+        prefix *= nums[i]
+
+    suffix = 1
+    for i in range(len(nums)-1, -1, -1):
+        res[i] *= suffix
+        suffix *= nums[i]
+
+    return res
+nums = [1, 2, 3, 4]
+print(product_except_self(nums))
