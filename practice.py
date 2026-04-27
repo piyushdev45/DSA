@@ -280,12 +280,24 @@
 # rectangular_matrix = np.eye(3, 5)
 # print(rectangular_matrix)
 
-import pandas as pd
+# import pandas as pd
 
-data = {
-    "Name": ["Aman", "Riya", "John"],
-    "Age": [21, 22, 23]
-}
+# data = {
+#     "Name": ["Aman", "Riya", "John"],
+#     "Age": [21, 22, 23]
+# }
 
-df = pd.DataFrame(data)
-print(df)
+# df = pd.DataFrame(data)
+# print(df)
+
+#hasemap    
+def hash_map(lst):
+    hash_map = {}
+    
+    for item in lst:
+        if item in hash_map:
+            hash_map[item] += 1
+        else:
+            hash_map[item] = 1
+            
+    return hash_map
